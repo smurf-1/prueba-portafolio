@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Aqui empieza los estilos de la barra de navegacion*/
+.navegacion{
+    height: 70px;
+
+}
+/* Aqui empiezan los estilos de la galeria de fotos*/
+.galeria {
+    padding: 40px 40px 40px 40px;
+    background-color: rgb(255, 255, 255);
+    height: 1400px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    gap: 20px;
+    margin: 50px
+    
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes move-down-infinite {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100px); }
+}
+
+@keyframes move-up-infinite {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+
+.animate-down img {
+    animation: move-down-infinite 6s linear infinite;
+}
+
+.animate-up img {
+    animation: move-up-infinite 6s linear infinite;
+}
+/* Aqui terminan los estilos de la galeria de fotos*/
+
+/* Aqui empiezan los estilos seccion de biografia*/
+.quiensoy{
+    height: 700px;
+
+}
+.who-i-am {
+    padding: 200px 20px;
+    margin-top: -80px;
+    background: var(--background);
+    background: url("./img/fondo1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    position: relative;
+    width: auto;
+}
+
+.who-i-am__content {
+    width: 80%;
+}
+
+.who-i-am__title {
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.who-i-am__description {
+    font-size: 24px;
+}
+
+/* Aqui empiezan los estilos seccion de biografia*/
+
+.valores{
+    background-color: grey;
+    border: 10px solid;
+    border-color: black;
+    height: 400px;
+
+}
+.referencia{
+    background-color: grey;
+    border: 10px solid;
+    border-color: black;
+    height: 100px;
+
+}
+.quehago{
+    background-color: grey;
+    border: 10px solid;
+    border-color: black;
+    height: 700px;
+
+}
+.ultimoblog{
+    background-color: grey;
+    border: 10px solid;
+    border-color: black;
+    height: 700px;
+
+}
+.hobbie{
+    background-color: grey;
+    border: 10px solid;
+    border-color: black;
+    height: 700px;
+
+}
+
+
